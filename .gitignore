@@ -1,0 +1,22 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Eclipse
+.settings/
+.classpath
+.project
+.externalToolBuilders
+
+# idea
+.idea/
+*.iml
+
+# Maven
+target/
+work/
+
+# MacOS
+.DS_Store
