@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-    Allows write build logs to working space build.log file.
+    Log Center: Allows writing build logs to working space build.log file.
 </div>
