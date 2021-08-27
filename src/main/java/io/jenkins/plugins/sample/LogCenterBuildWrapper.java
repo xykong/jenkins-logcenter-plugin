@@ -57,8 +57,28 @@ public class LogCenterBuildWrapper extends BuildWrapper {
         };
     }
 
+    @Override
+    public DescriptorImpl getDescriptor() {
+        return DESCRIPTOR;
+    }
+
+    /**
+     * Creates descriptor for the BuildWrapper.
+     */
     @Extension
-    public static final class DescriptorImpl extends BuildWrapperDescriptor {
+    public static final DescriptorImpl DESCRIPTOR = new DescriptorImpl();
+
+    /**
+     * Registers {@link LogCenterBuildWrapper} as a {@link BuildWrapper}.
+     */
+    @Extension
+    public static class DescriptorImpl extends BuildWrapperDescriptor {
+
+        public DescriptorImpl() {
+            super(LogCenterBuildWrapper.class);
+            load();
+        }
+
         /**
          * {@inheritDoc}
          */
@@ -67,6 +87,9 @@ public class LogCenterBuildWrapper extends BuildWrapper {
             return true;
         }
 
+        /**
+         * {@inheritDoc}
+         */
         @NonNull
         @Override
         public String getDisplayName() {
