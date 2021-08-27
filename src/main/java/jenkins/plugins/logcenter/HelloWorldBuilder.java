@@ -1,5 +1,6 @@
 package jenkins.plugins.logcenter;
 
+import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Launcher;
 import hudson.Extension;
 import hudson.FilePath;
@@ -14,6 +15,7 @@ import org.kohsuke.stapler.QueryParameter;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
+
 import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
@@ -68,9 +70,10 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
         @Override
         public boolean isApplicable(Class<? extends AbstractProject> aClass) {
-            return true;
+            return false;
         }
 
+        @NonNull
         @Override
         public String getDisplayName() {
             return Messages.HelloWorldBuilder_DescriptorImpl_DisplayName();
