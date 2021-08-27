@@ -1,4 +1,4 @@
-package io.jenkins.plugins.sample;
+package jenkins.plugins.logcenter;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
@@ -93,7 +93,7 @@ public class LogCenterBuildWrapper extends BuildWrapper {
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Write build logs to working space.";
+            return "Write build logs to working space build.log file.";
         }
     }
 }

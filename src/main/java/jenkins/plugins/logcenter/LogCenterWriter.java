@@ -1,4 +1,4 @@
-package io.jenkins.plugins.sample;
+package jenkins.plugins.logcenter;
 
 import hudson.FilePath;
 
