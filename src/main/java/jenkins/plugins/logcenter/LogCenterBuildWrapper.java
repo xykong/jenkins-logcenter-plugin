@@ -57,17 +57,6 @@ public class LogCenterBuildWrapper extends BuildWrapper {
         };
     }
 
-    @Override
-    public DescriptorImpl getDescriptor() {
-        return DESCRIPTOR;
-    }
-
-    /**
-     * Creates descriptor for the BuildWrapper.
-     */
-    @Extension
-    public static final DescriptorImpl DESCRIPTOR = new DescriptorImpl();
-
     /**
      * Registers {@link LogCenterBuildWrapper} as a {@link BuildWrapper}.
      */
