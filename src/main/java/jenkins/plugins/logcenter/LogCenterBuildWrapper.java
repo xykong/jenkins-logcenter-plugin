@@ -82,7 +82,7 @@ public class LogCenterBuildWrapper extends BuildWrapper {
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Write build logs to working space build.log file.";
+            return Messages.LogCenterBuildWrapper_DisplayName();
         }
     }
 }
