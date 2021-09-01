@@ -1,2 +1,2 @@
 _extends: .github
-tag-template: logcenter-$NEXT_MINOR_VERSION
+tag-template: copy-build-log-$NEXT_MINOR_VERSION

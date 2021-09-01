@@ -1,4 +1,4 @@
-# Log Center
+# Copy Build Log
 
 ## Introduction
 
